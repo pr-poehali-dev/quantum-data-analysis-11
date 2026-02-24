@@ -48,6 +48,17 @@ const Index = () => {
                 copyrightLink={{ text: "Речь и развитие", href: "#" }}
                 showThemeSwitcher={true}
               >
+                <div className="flex items-center gap-4">
+                  <img
+                    src="https://cdn.poehali.dev/projects/4531f047-96e2-4a6f-8076-7ccf9f501fab/files/b31d7334-4ca2-42ce-b37c-70c2121867bf.jpg"
+                    alt="Мария Ивановна"
+                    className="w-16 h-16 rounded-full object-cover object-top shadow-md flex-shrink-0"
+                  />
+                  <div>
+                    <p className="font-medium text-slate-12">Мария Ивановна</p>
+                    <p className="text-sm text-slate-10">Логопед · Нейропсихолог</p>
+                  </div>
+                </div>
                 <div className="space-y-2">
                   <p className="text-sm font-medium text-slate-10 uppercase tracking-widest">
                     Логопед · Нейропсихолог
