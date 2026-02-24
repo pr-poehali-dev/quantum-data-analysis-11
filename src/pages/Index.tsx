@@ -56,7 +56,7 @@ const Index = () => {
                     Помогаем детям говорить, думать и развиваться
                   </h1>
                   <p className="text-slate-10 tracking-tight text-pretty">
-                    Запишитесь на первичную консультацию — оставьте номер телефона или email, и мы свяжемся с вами в ближайшее время.
+                    Запишитесь на первичную консультацию к <span className="text-slate-12 font-medium">Марии Ивановне</span> — оставьте номер телефона или email, и мы свяжемся с вами в ближайшее время.
                   </p>
                 </div>
                 <div className="px-1 flex flex-col w-full self-stretch">
