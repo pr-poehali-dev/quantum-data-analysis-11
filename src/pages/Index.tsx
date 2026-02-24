@@ -26,7 +26,7 @@ const Index = () => {
     >
       <div className="antialiased max-w-screen min-h-svh bg-slate-1 text-slate-12">
         <MeshGradient
-          colors={["#001c80", "#1ac7ff", "#04ffb1", "#ff1ff1"]}
+          colors={["#1a3a6b", "#4e9af1", "#a78bfa", "#f0abfc"]}
           style={{
             position: "fixed",
             top: 0,
@@ -42,29 +42,31 @@ const Index = () => {
               <WaitlistWrapper
                 logo={{
                   src: "/logo.svg",
-                  alt: "Launchpad",
+                  alt: "Речь и развитие",
                 }}
-                copyright="При поддержке"
-                copyrightLink={{ text: "Ваша компания", href: "#" }}
+                copyright="© 2026"
+                copyrightLink={{ text: "Речь и развитие", href: "#" }}
                 showThemeSwitcher={true}
               >
-                <div className="space-y-1">
+                <div className="space-y-2">
+                  <p className="text-sm font-medium text-slate-10 uppercase tracking-widest">
+                    Логопед · Нейропсихолог
+                  </p>
                   <h1 className="text-2xl sm:text-3xl font-medium text-slate-12 whitespace-pre-wrap text-pretty">
-                    Лист ожидания
+                    Помогаем детям говорить, думать и развиваться
                   </h1>
                   <p className="text-slate-10 tracking-tight text-pretty">
-                    Узнайте первыми о запуске. Получите ранний доступ и
-                    эксклюзивные обновления.
+                    Запишитесь на первичную консультацию — оставьте номер телефона или email, и мы свяжемся с вами в ближайшее время.
                   </p>
                 </div>
                 <div className="px-1 flex flex-col w-full self-stretch">
                   <WaitlistForm
                     onSubmit={handleSubmit}
-                    placeholder="Введите email"
+                    placeholder="Ваш email или телефон"
                     buttonCopy={{
                       idle: "Записаться",
                       loading: "Отправка...",
-                      success: "Готово!",
+                      success: "Ждите звонка!",
                     }}
                   />
                 </div>
