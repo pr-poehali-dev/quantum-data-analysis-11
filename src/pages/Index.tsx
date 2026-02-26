@@ -9,12 +9,17 @@ const Index = () => {
   const handleSubmit = async (
     email: string
   ): Promise<{ success: boolean; error?: string }> => {
-    // Simulate API call
-    console.log("Submitting email:", email);
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    // Demo: always succeed
-    return { success: true };
+    try {
+      const res = await fetch("https://functions.poehali.dev/f3e80bc1-215b-4481-940e-f6d2dee9e5d1", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ contact: email }),
+      });
+      if (!res.ok) return { success: false, error: "Ошибка отправки" };
+      return { success: true };
+    } catch {
+      return { success: false, error: "Нет соединения" };
+    }
   };
 
   return (

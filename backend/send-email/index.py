@@ -20,7 +20,8 @@ def handler(event: dict, context) -> dict:
             'body': ''
         }
 
-    body = json.loads(event.get('body', '{}'))
+    raw_body = event.get('body', '') or '{}'
+    body = json.loads(raw_body)
     contact = body.get('contact', '')
 
     if not contact:
